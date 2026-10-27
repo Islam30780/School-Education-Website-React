@@ -329,12 +329,13 @@ const Navbar = () => {
               },
             }}
           >
-            <ListItemText
-              primary={item.label}
-              primaryTypographyProps={{
-                fontWeight: 600,
-              }}
-            />
+           <ListItemText
+  primary={
+    <Typography fontWeight={600}>
+      {item.label}
+    </Typography>
+  }
+/>
           </ListItemButton>
         </ListItem>
       ))}
